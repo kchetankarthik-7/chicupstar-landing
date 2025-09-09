@@ -1,154 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ChicUpStar - Chic Up. Shine Bright. Be a Star.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            color: #333;
-        }
-        .hero {
-            background: linear-gradient(135deg, #FFD700, #FF69B4, #8A2BE2);
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-        }
-        .hero p {
-            font-size: 1.5rem;
-            margin-top: 20px;
-        }
-        .hero a {
-            display: inline-block;
-            margin-top: 30px;
-            background-color: black;
-            color: #FFD700;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 30px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .hero a:hover {
-            background-color: #FFD700;
-            color: black;
-        }
-        .about {
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .about p {
-            max-width: 800px;
-            margin: auto;
-            font-size: 1.2rem;
-            line-height: 1.6;
-        }
-        .features {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 40px;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        @media(min-width: 768px) {
-            .features {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        .feature {
-            background: #f9f9f9;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        .feature h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #8A2BE2;
-        }
-        .cta {
-            background: #FFD700;
-            color: black;
-            text-align: center;
-            padding: 80px 20px;
-        }
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-        }
-        .cta a {
-            background-color: black;
-            color: #FFD700;
-            text-decoration: none;
-            padding: 15px 30px;
-            border-radius: 30px;
-            font-size: 1.2rem;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .cta a:hover {
-            background-color: #FFD700;
-            color: black;
-        }
-        .footer {
-            background: black;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChicUpStar</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <section class="hero">
-        <h1>Chic Up. Shine Bright. Be a Star.</h1>
-        <p>Empower Your Style, Spark Confidence, and Shine Bright Everyday</p>
-        <a href="#get-started">Get Started</a>
-    </section>
+<!-- Navigation -->
+<nav>
+  <div class="logo">ChicUpStar</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <section class="about">
-        <h2>Why ChicUpStar?</h2>
-        <p>ChicUpStar is your go-to platform for fashion tips, beauty hacks, and personal growth inspiration.  
-           Step up your style game, glow with confidence, and be the star you were born to be.</p>
-    </section>
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <canvas id="particles"></canvas>
+  <h1 id="typing"></h1>
+  <button class="hero-btn">Shop Now</button>
+</section>
 
-    <section class="features">
-        <div class="feature">
-            <h3>Style Tips</h3>
-            <p>Quick and easy fashion advice to help you stand out and shine in every situation.</p>
-        </div>
-        <div class="feature">
-            <h3>Beauty Hacks</h3>
-            <p>Discover simple beauty secrets that boost your confidence in minutes.</p>
-        </div>
-        <div class="feature">
-            <h3>Inspiration Boost</h3>
-            <p>Daily motivation and empowering content to help you own your unique style and shine bright.</p>
-        </div>
-    </section>
+<!-- Features Section -->
+<section id="features">
+  <h2 class="animate-on-scroll">Our Features</h2>
+  <div class="cards">
+    <div class="card">Feature 1</div>
+    <div class="card">Feature 2</div>
+    <div class="card">Feature 3</div>
+  </div>
+</section>
 
-    <section class="cta" id="get-started">
-        <h2>Ready to Chic Up and Shine Bright?</h2>
-        <a href="/signup">Join Us Now</a>
-    </section>
+<!-- Contact Section -->
+<section id="contact">
+  <h2 class="animate-on-scroll">Contact Us</h2>
+  <p>Email: info@chicupstar.com</p>
+</section>
 
-    <footer class="footer">
-        <p>&copy; 2025 ChicUpStar.com | All rights reserved</p>
-    </footer>
+<!-- Footer -->
+<footer>
+  <p>© 2025 ChicUpStar. All rights reserved.</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
